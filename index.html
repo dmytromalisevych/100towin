@@ -318,10 +318,11 @@
             left: 50%;
             transform: translate(-50%, -50%);
             font-family: 'Black Ops One', system-ui, sans-serif;
-            font-size: 6.5rem;
-            letter-spacing: 8px;
+            font-size: clamp(2.5rem, 8vw, 6.5rem);
+            letter-spacing: clamp(2px, 1vw, 8px);
             text-transform: uppercase;
             margin: 0;
+            width: 100%;
             z-index: 10;
             pointer-events: none;
             color: green;
