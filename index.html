@@ -86,42 +86,42 @@
         }
 
         .map-container {
-            position: relative;
+            position: relative; 
+            overflow: hidden; 
+            width: 100%;
         }
 
         .zoom-controls {
-            position: absolute;
-            bottom: 80px;
-            right: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            z-index: 10;
+           position: absolute;
+           right: 15px;     
+           bottom: 15px;    
+           display: flex;
+           flex-direction: column;
+           gap: 8px;
+           z-index: 10;
         }
 
         .zoom-controls button {
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
-            border: 1px solid #cbd5e1;
-            background: white;
-            color: #1e293b;
-            font-size: 20px;
-            font-weight: bold;
-            cursor: pointer;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-            transition: all 0.2s;
+           width: 36px;      
+           height: 36px;
+           border-radius: 8px;
+           border: 1px solid #cbd5e1;
+           background: white;
+           color: #1e293b;
+           font-size: 20px;
+           font-weight: bold;
+           cursor: pointer;
+           box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+           transition: all 0.2s;
+           display: flex;
+           align-items: center;
+           justify-content: center;
         }
 
         .zoom-controls button:hover {
-            background: #f8fafc;
-            transform: scale(1.05);
+           background: #f8fafc;
+           transform: scale(1.05);
         }
-
-        .zoom-controls button:active {
-            background: #e2e8f0;
-        }
-
         .map-tooltip {
             position: fixed;
             background: rgba(15, 23, 42, 0.95);
